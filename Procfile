@@ -1,0 +1,1 @@
+web: env "RATPACK_CHAT_OPTS=-Dfile.encoding=UTF-8 -server -Xmx512m -XX:+UseCompressedOops" build/install/ratpack-chat/bin/ratpack-chat
