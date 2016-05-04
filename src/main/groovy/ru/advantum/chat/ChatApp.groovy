@@ -1,6 +1,7 @@
 package ru.advantum.chat
 
 import groovy.util.logging.Slf4j
+import ratpack.func.Action
 import ratpack.handling.RequestLogger
 import ratpack.server.BaseDir
 import ratpack.server.RatpackServer
@@ -14,7 +15,7 @@ import ratpack.server.RatpackServerSpec
 @Slf4j
 class ChatApp {
     public static void main(String... args) {
-        RatpackServer.start({ RatpackServerSpec ratpackServerSpec ->
+        RatpackServer.start((Action){ RatpackServerSpec ratpackServerSpec ->
             ratpackServerSpec.serverConfig() { config ->
                 config
                         .baseDir(BaseDir.find())
