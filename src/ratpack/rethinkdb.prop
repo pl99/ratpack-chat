@@ -1,0 +1,2 @@
+rethinkdb.host=127.0.0.1
+rethinkdb.driverport=28015
